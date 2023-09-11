@@ -14,6 +14,6 @@ public class Main {
             rows.add(new Row(d));
         }
 
-        System.out.println(Collections.min(rows).getValue());
+        System.out.println(Collections.max(rows).getValue());
     }
 }

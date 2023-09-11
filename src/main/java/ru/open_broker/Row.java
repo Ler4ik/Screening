@@ -30,8 +30,8 @@ public class Row implements Comparable<Row> {
     @Override
     public int compareTo(Row o) {
         if (this.sum.equals(o.getSum())) {
-            return this.value.length() - o.getValue().length();
+            return o.getValue().length() - this.value.length();
         }
-        return o.getSum() - this.sum;
+        return this.sum - o.getSum();
     }
 }
